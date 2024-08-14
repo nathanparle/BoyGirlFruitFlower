@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
     const table = document.getElementById('editableTable').getElementsByTagName('tbody')[0];
-    for(let i = 0; i < 10 ; i++){
+    for(let i = 0; i < 15 ; i++){
         const row = table.insertRow();
         for ( let j = 0; j < 9; j++){
             const cell=row.insertCell();
