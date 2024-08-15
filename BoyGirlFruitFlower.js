@@ -10,13 +10,18 @@ document.addEventListener('DOMContentLoaded', () => {
             });
         }
     }
-
+const headers = document.getElementsByTagName('th');
+for ( let header of headers){
+    
+header.contentEditable = 'true';
+header.addEventListener('click', () => {
+    header.focus();});}
 const generateLetterBtn = document.getElementById("generateLetterBtn");
 const randomLetterDisplay = document.getElementById("randomLetterDisplay");
 
 generateLetterBtn.addEventListener('click', () => {
     const randomLetter = String.fromCharCode(97 + Math.floor(Math.random()*26));
-    randomLetterDisplay.textContent = `Random Letter: ${randomLetter}`;
+    randomLetterDisplay.textContent = `Random Letter: ${randomLetter.toUpperCase()}`;
 })}
 
 )

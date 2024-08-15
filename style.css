@@ -1,7 +1,10 @@
 html {
     font-family: sans-serif;
   }
-  
+  body { background: url('./images/cookies.jpg') , repeat-y;
+         background-size: 150px;
+         
+  }
   table {
     
     border: 2px solid rgb(200,200,200);
@@ -37,6 +40,8 @@ html {
 
   p button { align-items: center;
   text-align: center;}
+  
+  #randomLetterDisplay{ color: white;}
 
 
 table { width:100%;
